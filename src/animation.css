@@ -157,7 +157,7 @@ section.show#carousel {
 
 section div.tersembunyi#judul-artikel {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-2%);
     transition: all 500ms ease;
 }
 
@@ -168,25 +168,25 @@ section div.show#judul-artikel {
 
 section div.tersembunyi#isi-artikel-1 {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-2%);
     transition: all 500ms ease;
 }
 
 section div.tersembunyi#isi-artikel-2 {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(2%);
     transition: all 500ms ease;
 }
 
 section div.tersembunyi#isi-artikel-3 {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-2%);
     transition: all 500ms ease;
 }
 
 section div.tersembunyi#isi-artikel-4 {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(2%);
     transition: all 500ms ease;
 }
 

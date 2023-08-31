@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="./src/animation.css">
 </head>
 <body class="antialiased bg-body text-body font-body">
+
+  <style>
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  </style>
+
     <div class="">
       
       <!-- navbar -->
@@ -82,62 +90,50 @@
 
       <!-- navbar end -->
                 
-      <section class="relative py-20 tersembunyi" id="carousel">
-        <div class="container px-4 mx-auto">
-          <div class="flex items-center justify-around -mx-4">
-            <div class="px-4">
-              <button class="flex-shrink-0 mr-2 hidden lg:block w-14 h-14 rounded-full border hover:bg-gray-50">
-                <svg class="mx-auto" width="19" height="13" viewbox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.30018 6.25128L18.2502 6.25128" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.30017 1.25031L1.36317 6.25131L9.30017 11.2523L9.30017 1.25031Z" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </button>
-            </div>
-            <div class="max-w-4xl mx-auto">
-              <div class="flex flex-wrap items-center -mx-4">
-                
-                <div class="relative w-full px-4">
-                  <div class="lg:hidden text-center my-6">
-                    <button class="w-14 h-14 rounded-full border hover:bg-gray-50">
-                      <svg class="mx-auto" width="19" height="13" viewbox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.30018 6.25128L18.2502 6.25128" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.30017 1.25031L1.36317 6.25131L9.30017 11.2523L9.30017 1.25031Z" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </button>
-                    <button class="w-14 h-14 rounded-full border hover:bg-gray-50">
-                      <svg class="mx-auto" width="19" height="13" viewbox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.69976 6.74872L0.749756 6.74872" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.69971 11.7497L17.6367 6.74869L9.69971 1.74769V11.7497Z" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="relative h-112 mb-10">
-                    <img class="h-112 w-full object-cover object-top rounded-xl" src="images/P1000630.jpg" alt="">
-                    
-                  </div>
-                  <div class="block w-full text-center">
-                    <button class="w-2 h-2 mr-6 rounded-full bg-gray-100"></button>
-                    <button class="w-2 h-2 mr-6 rounded-full bg-gray-100"></button>
-                    
-                    <button class="w-2 h-2 mr-6 rounded-full bg-gray-100"></button>
-                    <button class="w-2 h-2 rounded-full bg-gray-100"></button>
-                  </div>
-                </div>
+      <section class="relative py-6 tersembunyi md:py-20" id="carousel">
+        <center><div id="default-carousel" class="relative w-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden w-1/2 rounded-lg md:h-96">
+               <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="images/P1000630.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
-            </div>
-            <div class="px-4">
-              <button class="flex-shrink-0 ml-2 hidden lg:block w-14 h-14 rounded-full border hover:bg-gray-50">
-                <svg class="mx-auto" width="19" height="13" viewbox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.69976 6.74872L0.749756 6.74872" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.69971 11.7497L17.6367 6.74869L9.69971 1.74769V11.7497Z" stroke="#838EA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </button>
-            </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="images/P1000651.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="images/P1000677.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="images/P1000536.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
           </div>
-        </div>
+          <!-- Slider indicators -->
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-black dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-black dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+      </div>
+    </center>
       </section>
                 
-      <section class="py-20" id="isi-artikel"><div class="container px-4 mx-auto">
+      <section class="py-4" id="isi-artikel"><div class="container px-4 mx-auto">
         <div class="max-w-2xl mb-20 tersembunyi" id="judul-artikel">
       
           <h2 class="mt-8 mb-10 text-4xl font-semibold font-heading">Produk Unggulan Baja Ringan Platinum</h2>
@@ -315,8 +311,49 @@
           </div>
           <p class="text-center text-sm text-gray-500 pt-8 px-4 border-t">All rights reserved © PLATINUM 2023</p>
         </section>
+'images/P1000630.jpg', // Tambahkan lokasi gambar-gambar lain di sini
+              'images/P1000651.jpg',
+              'images/P1000677.jpg',
+              'images/P1000536.jpg',
+
       </section>  
       </div>
+      <script>
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            const carouselImages = document.getElementById('carouselImages');
+            
+            const images = [
+              'images/P1000630.jpg', // Tambahkan lokasi gambar-gambar lain di sini
+              'images/P1000651.jpg',
+              'images/P1000677.jpg',
+              'images/P1000536.jpg',
+            ];
+            
+            let currentIndex = 0;
+  
+            function updateCarousel() {
+              const imageUrl = images[currentIndex];
+              carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+            
+            function changeImage(increment) {
+              currentIndex = (currentIndex + increment + images.length) % images.length;
+              updateCarousel();
+            }
+            
+            prevButton.addEventListener('click', () => changeImage(-1));
+            nextButton.addEventListener('click', () => changeImage(1));
+            
+            updateCarousel();
+          </script>
+
+
+
+
+
+
+
       <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
       <script src="./animation.js"></script>
